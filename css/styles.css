@@ -1,4 +1,4 @@
-/* Babytop Seminar Site Styles */
+/* Babytop Seminar Site Styles - Matching MIT Design */
 
 /* Reset and base styles */
 * {
@@ -8,80 +8,125 @@
 }
 
 body {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    line-height: 1.6;
-    color: #333;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.4;
+    color: #000;
     background-color: #fff;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header styles */
+/* MIT Header */
+.mit-header {
+    background-color: #a31f34;
+    color: white;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.mit-logo {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.mit-text {
+    font-size: 11px;
+}
+
+.dept-text {
+    font-size: 11px;
+}
+
+.seminars-text {
+    font-size: 11px;
+    font-style: italic;
+}
+
+/* Main header */
 .header {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #a31f34;
+    padding: 15px 0;
+    text-align: center;
 }
 
 .header h1 {
-    font-size: 24px;
-    font-weight: normal;
+    font-size: 28px;
+    font-weight: bold;
+    color: #a31f34;
     margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
 }
 
+/* Navigation */
 .nav {
-    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .nav a {
-    color: #0066cc;
+    color: #a31f34;
     text-decoration: none;
-    margin-right: 20px;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .nav a:hover {
     text-decoration: underline;
 }
 
+/* Main content */
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* Semester info */
 .semester-info {
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .semester-title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    color: #000;
 }
 
 .semester-description {
     margin-bottom: 15px;
     font-style: italic;
+    color: #000;
 }
 
 .meeting-info {
     margin-bottom: 10px;
+    color: #000;
 }
 
 .calendar-link {
-    color: #0066cc;
+    color: #a31f34;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .calendar-link:hover {
     text-decoration: underline;
 }
 
-/* Talk styles */
+/* Talk styles - matching original format */
 .talks-container {
     margin-bottom: 30px;
 }
 
 .talk {
-    margin-bottom: 20px;
-    border-left: 3px solid #ddd;
-    padding-left: 15px;
+    margin-bottom: 25px;
+    padding-left: 0;
+    border-left: none;
 }
 
 .talk-header {
@@ -91,70 +136,77 @@ body {
 }
 
 .talk-header:hover {
-    background-color: #f9f9f9;
+    background-color: #f5f5f5;
 }
 
-.talk-date {
+/* Style the markdown-like content */
+.talk-header div {
+    line-height: 1.4;
+}
+
+.talk-header strong {
     font-weight: bold;
-    color: #666;
-    margin-bottom: 5px;
 }
 
-.talk-title {
+.talk-header h4 {
     font-size: 16px;
     font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
+    margin: 8px 0;
+    color: #000;
+    line-height: 1.3;
 }
 
-.talk-speaker {
+.talk-header h3 {
     font-size: 14px;
-    color: #666;
-    margin-bottom: 10px;
+    font-weight: bold;
+    margin: 8px 0 15px 0;
+    color: #000;
 }
 
 .talk-abstract {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    background-color: #f9f9f9;
-    padding: 0 10px;
-    margin-top: 10px;
-    border-radius: 3px;
+    background-color: #fff;
+    padding: 0;
+    margin-top: 0;
+    border-radius: 0;
+    border-left: 3px solid #a31f34;
+    padding-left: 15px;
 }
 
 .talk-abstract.expanded {
-    max-height: 500px;
-    padding: 10px;
+    max-height: 1000px;
+    padding: 15px 0 15px 15px;
 }
 
 .talk-abstract-content {
     font-size: 14px;
     line-height: 1.5;
-    color: #555;
+    color: #000;
 }
 
 /* Past seminars page */
 .past-semester {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #ccc;
     background-color: #f9f9f9;
 }
 
 .past-semester h3 {
     margin-bottom: 5px;
-    color: #333;
+    color: #a31f34;
+    font-size: 18px;
 }
 
 .past-semester p {
-    color: #666;
+    color: #000;
     margin-bottom: 10px;
 }
 
 .past-semester a {
-    color: #0066cc;
+    color: #a31f34;
     text-decoration: none;
     font-weight: bold;
 }
@@ -170,6 +222,16 @@ body {
     border-top: 1px solid #ccc;
     font-size: 12px;
     color: #666;
+    text-align: center;
+}
+
+.footer a {
+    color: #a31f34;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive design */
@@ -181,6 +243,14 @@ body {
     .nav a {
         display: block;
         margin-bottom: 5px;
+    }
+    
+    .header h1 {
+        font-size: 24px;
+    }
+    
+    .semester-title {
+        font-size: 20px;
     }
     
     .talk-title {
@@ -197,6 +267,7 @@ body {
     text-align: center;
     padding: 40px;
     color: #666;
+    font-style: italic;
 }
 
 .error {
@@ -205,4 +276,5 @@ body {
     padding: 10px;
     border-radius: 3px;
     margin: 20px 0;
+    text-align: center;
 }

@@ -108,21 +108,15 @@ class SeminarRenderer {
         headerDiv.className = 'talk-header';
         headerDiv.addEventListener('click', () => this.toggleAbstract(index));
 
-        const dateDiv = document.createElement('div');
-        dateDiv.className = 'talk-date';
-        dateDiv.textContent = `**${talk.date}** ${talk.year}`;
+        // Create the talk content with proper formatting
+        const talkContent = document.createElement('div');
+        talkContent.innerHTML = `
+            * <strong>**${talk.date}** ${talk.year}</strong><br>
+            #### ${talk.title}<br>
+            ### ${talk.speaker} (${talk.affiliation})
+        `;
 
-        const titleDiv = document.createElement('div');
-        titleDiv.className = 'talk-title';
-        titleDiv.textContent = talk.title;
-
-        const speakerDiv = document.createElement('div');
-        speakerDiv.className = 'talk-speaker';
-        speakerDiv.textContent = `### ${talk.speaker} (${talk.affiliation})`;
-
-        headerDiv.appendChild(dateDiv);
-        headerDiv.appendChild(titleDiv);
-        headerDiv.appendChild(speakerDiv);
+        headerDiv.appendChild(talkContent);
 
         const abstractDiv = document.createElement('div');
         abstractDiv.className = 'talk-abstract';
