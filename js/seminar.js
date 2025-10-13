@@ -148,13 +148,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Determine which data file to load based on the page
     const currentPath = window.location.pathname;
-    let dataPath = '/data/current.json'; // default for index.html
+    let dataPath = './data/current.json'; // default for index.html
     
     if (currentPath.includes('semesters/')) {
         // Extract semester from URL path
         const semesterMatch = currentPath.match(/semesters\/([^\/]+)\.html/);
         if (semesterMatch) {
-            dataPath = `/data/${semesterMatch[1]}.json`;
+            dataPath = `../data/${semesterMatch[1]}.json`;
         }
     }
     
