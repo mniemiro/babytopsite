@@ -64,7 +64,7 @@ body {
     background-color: #fff;
     border-bottom: 2px solid #a31f34;
     padding: 15px 0;
-    text-align: center;
+    text-align: center !important;
     margin-bottom: 20px;
 }
 
@@ -74,7 +74,9 @@ body {
     color: #a31f34;
     margin-bottom: 10px;
     font-family: "Times New Roman", Times, serif;
-    text-align: center;
+    text-align: center !important;
+    display: block;
+    width: 100%;
 }
 
 /* Navigation */
