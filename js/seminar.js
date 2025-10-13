@@ -144,7 +144,6 @@ class SeminarRenderer {
 
 // Initialize the seminar renderer when the page loads
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM loaded, initializing seminar renderer...');
     const renderer = new SeminarRenderer();
     
     // Determine which data file to load based on the page
@@ -159,6 +158,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    console.log('Loading data from:', dataPath);
     renderer.loadSeminarData(dataPath);
 });
