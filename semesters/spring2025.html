@@ -7,35 +7,45 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Babytop Seminar</h1>
-        <nav class="nav">
-            <a href="../index.html">Current Semester</a>
-            <a href="../past-seminars.html">Past Semesters</a>
-        </nav>
-    </div>
+    <div class="main-container">
+        <div class="mit-header">
+            <div class="mit-logo">MIT</div>
+            <div class="mit-text">Massachusetts Institute of Technology</div>
+            <div class="dept-text">Department of Mathematics</div>
+            <div class="seminars-text">Seminars and Colloquia</div>
+        </div>
+        
+        <div class="header">
+            <h1>Babytop Seminar</h1>
+            
+            <nav class="nav">
+                <a href="../index.html">Current Semester</a>
+                <a href="../past-seminars.html">Past Semesters</a>
+            </nav>
+        </div>
 
-    <div id="semester-info" class="semester-info">
-        <h2 id="semester-title" class="semester-title">Loading...</h2>
-        <p id="semester-description" class="semester-description">Loading...</p>
-        <p id="meeting-info" class="meeting-info">Loading...</p>
-        <p><a id="calendar-link" class="calendar-link" href="#">Loading...</a></p>
-    </div>
+        <div id="semester-info" class="semester-info">
+            <h2 id="semester-title" class="semester-title">Loading...</h2>
+            <p id="semester-description" class="semester-description">Loading...</p>
+            <p id="meeting-info" class="meeting-info">Loading...</p>
+            <p><a id="calendar-link" class="calendar-link" href="#">Loading...</a></p>
+        </div>
 
-    <div id="loading" class="loading">
-        Loading seminar data...
-    </div>
+        <div id="loading" class="loading">
+            Loading seminar data...
+        </div>
 
-    <div id="error" class="error" style="display: none;">
-        Error loading seminar data.
-    </div>
+        <div id="error" class="error" style="display: none;">
+            Error loading seminar data.
+        </div>
 
-    <div id="talks-container" class="talks-container" style="display: none;">
-        <!-- Talks will be dynamically loaded here -->
-    </div>
+        <div id="talks-container" class="talks-container" style="display: none;">
+            <!-- Talks will be dynamically loaded here -->
+        </div>
 
-    <div class="footer">
-        <p>This seminar was organized by <span id="organizer">Matthew Niemiro</span>.</p>
+        <div class="footer">
+            <p>This seminar was organized by <span id="organizer">Matthew Niemiro</span>.</p>
+        </div>
     </div>
 
     <script src="../js/seminar.js"></script>
