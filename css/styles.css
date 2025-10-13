@@ -1,94 +1,51 @@
-/* Babytop Seminar Site Styles - Matching MIT Design */
-
-/* Reset and base styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Babytop Seminar Site Styles - Clean Version */
 
 body {
     font-family: "Times New Roman", Times, serif;
-    line-height: 1.4;
-    color: #000;
-    background-color: #fff;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5;
     display: flex;
     justify-content: center;
     min-height: 100vh;
 }
 
-/* Main container - middle third column */
-.main-container {
+.container {
     width: 33.333%;
     max-width: 600px;
     min-width: 400px;
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     margin: 20px 0;
 }
 
-/* MIT Header */
 .mit-header {
     background-color: #a31f34;
     color: white;
-    padding: 8px 0;
+    padding: 10px;
     text-align: center;
     font-size: 12px;
-    font-family: Arial, sans-serif;
     margin: -20px -20px 20px -20px;
 }
 
-.mit-logo {
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.mit-text {
-    font-size: 11px;
-}
-
-.dept-text {
-    font-size: 11px;
-}
-
-.seminars-text {
-    font-size: 11px;
-    font-style: italic;
-}
-
-/* Main header */
-.header {
-    background-color: #fff;
-    border-bottom: 2px solid #a31f34;
-    padding: 15px 0;
-    text-align: center !important;
-    margin-bottom: 20px;
-}
-
-.header h1 {
+.title {
+    text-align: center;
     font-size: 28px;
     font-weight: bold;
     color: #a31f34;
-    margin-bottom: 10px;
-    font-family: "Times New Roman", Times, serif;
-    text-align: center !important;
-    display: block;
-    width: 100%;
+    margin: 20px 0;
 }
 
-/* Navigation */
 .nav {
-    margin-top: 10px;
+    text-align: center;
+    margin: 20px 0;
 }
 
 .nav a {
     color: #a31f34;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 14px;
     font-weight: bold;
 }
 
@@ -96,10 +53,13 @@ body {
     text-decoration: underline;
 }
 
+.content {
+    text-align: center;
+}
+
 /* Semester info */
 .semester-info {
     margin-bottom: 30px;
-    text-align: center;
 }
 
 .semester-title {
@@ -130,15 +90,16 @@ body {
     text-decoration: underline;
 }
 
-/* Talk styles - matching original format */
+/* Talk styles */
 .talks-container {
     margin-bottom: 30px;
+    text-align: left;
 }
 
 .talk {
     margin-bottom: 25px;
-    padding-left: 0;
-    border-left: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
 }
 
 .talk-header {
@@ -148,16 +109,17 @@ body {
 }
 
 .talk-header:hover {
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
 }
 
-/* Style the markdown-like content */
 .talk-header div {
     line-height: 1.4;
 }
 
 .talk-header strong {
     font-weight: bold;
+    color: #000;
+    font-size: 14px;
 }
 
 .talk-header h4 {
@@ -179,17 +141,15 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 0;
-    margin-top: 0;
-    border-radius: 0;
-    border-left: 3px solid #a31f34;
-    padding-left: 15px;
+    margin-top: 10px;
+    border-radius: 3px;
 }
 
 .talk-abstract.expanded {
     max-height: 1000px;
-    padding: 15px 0 15px 15px;
+    padding: 15px;
 }
 
 .talk-abstract-content {
@@ -202,8 +162,9 @@ body {
 .past-semester {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     background-color: #f9f9f9;
+    text-align: left;
 }
 
 .past-semester h3 {
@@ -246,37 +207,6 @@ body {
     text-decoration: underline;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .main-container {
-        width: 90%;
-        min-width: 300px;
-        margin: 10px;
-        padding: 15px;
-    }
-    
-    .nav a {
-        display: block;
-        margin-bottom: 5px;
-    }
-    
-    .header h1 {
-        font-size: 24px;
-    }
-    
-    .semester-title {
-        font-size: 20px;
-    }
-    
-    .talk-header h4 {
-        font-size: 14px;
-    }
-    
-    .talk-header h3 {
-        font-size: 13px;
-    }
-}
-
 /* Loading state */
 .loading {
     text-align: center;
@@ -292,4 +222,34 @@ body {
     border-radius: 3px;
     margin: 20px 0;
     text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .nav a {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .title {
+        font-size: 24px;
+    }
+    
+    .semester-title {
+        font-size: 20px;
+    }
+    
+    .talk-header h4 {
+        font-size: 14px;
+    }
+    
+    .talk-header h3 {
+        font-size: 13px;
+    }
 }
