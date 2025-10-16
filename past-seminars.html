@@ -28,21 +28,16 @@
                 <p class="semester-description">Archive of previous Babytop seminar iterations.</p>
             </div>
 
-            <div class="talks-container">
-                <div class="past-semester">
-                    <h3>Spring 2025</h3>
-                    <p><strong>Topic:</strong> Chromatic homotopy theory</p>
-                    <p><strong>Organizer:</strong> Matthew Niemiro</p>
-                    <a href="semesters/spring2025.html">View Spring 2025 talks →</a>
-                </div>
+            <div id="loading" class="loading">
+                Loading past seminars...
+            </div>
 
-                <!-- Future semesters will be added here -->
-                <div class="past-semester">
-                    <h3>Fall 2024</h3>
-                    <p><strong>Topic:</strong> [Previous topic]</p>
-                    <p><strong>Organizer:</strong> [Previous organizer]</p>
-                    <a href="semesters/fall2024.html">View Fall 2024 talks →</a>
-                </div>
+            <div id="error" class="error" style="display: none;">
+                Error loading past seminars.
+            </div>
+
+            <div id="talks-container" class="talks-container" style="display: none;">
+                <!-- Past semesters will be dynamically loaded here -->
             </div>
         </div>
         
@@ -50,5 +45,7 @@
             <p>This seminar is organized by Matthew Niemiro.</p>
         </div>
     </div>
+
+    <script src="js/past-seminars.js"></script>
 </body>
 </html>

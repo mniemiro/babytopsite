@@ -7,16 +7,19 @@ A static website for the Babytop Seminar, built with plain HTML, CSS, and JavaSc
 ```
 /
 ├── index.html                    # Current semester page
-├── past-seminars.html           # Past semesters archive
+├── past-seminars.html           # Past semesters archive (dynamic)
 ├── semesters/                   # Individual past semester pages
 │   └── spring2025.html
 ├── data/                        # JSON data files
 │   ├── current.json            # Current semester data
-│   └── spring2025.json         # Past semester data
+│   ├── spring2025.json         # Past semester data
+│   └── semesters-index.json    # List of past semesters
 ├── js/
-│   └── seminar.js              # JavaScript renderer
+│   ├── seminar.js              # Main seminar renderer
+│   └── past-seminars.js        # Past seminars renderer
 ├── css/
 │   └── styles.css              # Site styling
+├── SEMESTER_MANAGEMENT.md       # Detailed management guide
 └── .github/workflows/
     └── static.yml              # GitHub Pages deployment
 ```
@@ -31,83 +34,35 @@ A static website for the Babytop Seminar, built with plain HTML, CSS, and JavaSc
 
 ## Managing Seminar Data
 
-### Adding a New Talk
+**📖 For detailed instructions on managing semesters, see [SEMESTER_MANAGEMENT.md](SEMESTER_MANAGEMENT.md)**
 
-Edit `/data/current.json` and add a new talk object:
+### Quick Reference
 
-```json
-{
-  "date": "Mar 18",
-  "year": "2025", 
-  "title": "Your Talk Title",
-  "speaker": "Speaker Name",
-  "affiliation": "MIT",
-  "abstract": "Abstract text here..."
-}
-```
+- **Adding talks**: Edit `/data/current.json` and add talk objects to the `talks` array
+- **New semester**: Create JSON file, HTML page, and update `data/semesters-index.json`
+- **Change current semester**: Update `/data/current.json` with new semester data
+- **Multiple organizers**: Use `organizers` array format
 
-### Updating Semester Information
-
-Edit the top-level fields in `/data/current.json`:
+### JSON Structure
 
 ```json
 {
   "semester": "Fall 2025",
-  "topic": "your new topic",
+  "topic": "your seminar topic",
   "meeting": "4:15pm on Tuesdays in Harvard SC 309",
   "calendarLink": "https://calendar.google.com/calendar",
-  "organizer": "Your Name"
+  "organizers": ["Organizer 1", "Organizer 2"],
+  "talks": [
+    {
+      "date": "Sep 10",
+      "year": "2025",
+      "title": "Talk Title",
+      "speaker": "Speaker Name", 
+      "affiliation": "MIT",
+      "abstract": "Abstract text..."
+    }
+  ]
 }
-```
-
-## Starting a New Semester
-
-When a semester ends, follow these steps to archive it and start fresh:
-
-### 1. Archive Current Semester
-
-```bash
-# Copy current data to archive
-cp data/current.json data/spring2025.json
-
-# Create archive page
-cp semesters/spring2025.html semesters/spring2025.html
-```
-
-### 2. Update Past Semesters Page
-
-Edit `past-seminars.html` and add a new entry:
-
-```html
-<div class="past-semester">
-    <h3>Spring 2025</h3>
-    <p><strong>Topic:</strong> Chromatic homotopy theory</p>
-    <p><strong>Organizer:</strong> Matthew Niemiro</p>
-    <a href="semesters/spring2025.html">View Spring 2025 talks →</a>
-</div>
-```
-
-### 3. Start New Semester
-
-Replace `/data/current.json` with new semester data:
-
-```json
-{
-  "semester": "Fall 2025",
-  "topic": "New Topic",
-  "meeting": "4:15pm on Tuesdays in Harvard SC 309",
-  "calendarLink": "https://calendar.google.com/calendar", 
-  "organizer": "Your Name",
-  "talks": []
-}
-```
-
-### 4. Deploy Changes
-
-```bash
-git add .
-git commit -m "Archive Spring 2025, start Fall 2025"
-git push origin main
 ```
 
 ## File Descriptions

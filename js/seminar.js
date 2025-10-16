@@ -61,6 +61,7 @@ class SeminarRenderer {
     renderSeminar(data) {
         this.renderSemesterInfo(data);
         this.renderTalks(data.talks);
+        this.renderOrganizers(data);
     }
 
     renderSemesterInfo(data) {
@@ -86,6 +87,26 @@ class SeminarRenderer {
         if (calendarLink && data.calendarLink) {
             calendarLink.href = data.calendarLink;
             calendarLink.textContent = 'Click here to add the seminar to your Google calendar.';
+        }
+    }
+
+    renderOrganizers(data) {
+        const organizerElement = document.getElementById('organizer');
+        if (!organizerElement) return;
+
+        const organizers = data.organizers || ['Unknown'];
+        organizerElement.textContent = this.formatOrganizers(organizers);
+    }
+
+    formatOrganizers(organizers) {
+        if (organizers.length === 1) {
+            return organizers[0];
+        } else if (organizers.length === 2) {
+            return `${organizers[0]} and ${organizers[1]}`;
+        } else {
+            const lastOrganizer = organizers[organizers.length - 1];
+            const otherOrganizers = organizers.slice(0, -1);
+            return `${otherOrganizers.join(', ')}, and ${lastOrganizer}`;
         }
     }
 
