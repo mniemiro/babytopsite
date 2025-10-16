@@ -1,0 +1,256 @@
+/* Babytop Seminar Site - Base Layout and Structure */
+
+/* CSS Custom Properties for theming */
+:root {
+    /* Layout */
+    --container-width: 33.333%;
+    --container-max-width: 600px;
+    --container-min-width: 400px;
+    --container-padding: 20px;
+    --container-margin: 20px 0;
+    
+    /* Typography */
+    --font-family-primary: "Times New Roman", Times, serif;
+    --font-size-small: 12px;
+    --font-size-normal: 14px;
+    --font-size-large: 16px;
+    --font-size-title: 28px;
+    --font-size-semester-title: 24px;
+    --font-size-semester-title-mobile: 20px;
+    --font-size-title-mobile: 24px;
+    --font-size-talk-title: 16px;
+    --font-size-talk-title-mobile: 14px;
+    --font-size-talk-speaker: 14px;
+    --font-size-talk-speaker-mobile: 13px;
+    
+    /* Spacing */
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    --spacing-xl: 25px;
+    --spacing-xxl: 30px;
+    --spacing-xxxl: 40px;
+    
+    /* Border radius */
+    --border-radius-sm: 3px;
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease-out;
+    
+    /* Z-index */
+    --z-dropdown: 1000;
+}
+
+/* Base styles */
+body {
+    font-family: var(--font-family-primary);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: var(--container-width);
+    max-width: var(--container-max-width);
+    min-width: var(--container-min-width);
+    padding: var(--container-padding);
+    margin: var(--container-margin);
+}
+
+/* Header structure */
+.mit-header {
+    padding: var(--spacing-sm);
+    text-align: center;
+    font-size: var(--font-size-small);
+    margin: calc(-1 * var(--container-padding)) calc(-1 * var(--container-padding)) var(--spacing-lg) calc(-1 * var(--container-padding));
+}
+
+.title {
+    text-align: center;
+    font-size: var(--font-size-title);
+    font-weight: bold;
+    margin: var(--spacing-lg) 0;
+}
+
+/* Navigation */
+.nav {
+    text-align: center;
+    margin: var(--spacing-lg) 0;
+}
+
+.nav a {
+    text-decoration: none;
+    margin: 0 var(--spacing-md);
+    font-weight: bold;
+}
+
+/* Content areas */
+.content {
+    text-align: center;
+}
+
+.semester-info {
+    margin-bottom: var(--spacing-xxl);
+}
+
+.semester-title {
+    font-size: var(--font-size-semester-title);
+    font-weight: bold;
+    margin-bottom: var(--spacing-md);
+}
+
+.semester-description {
+    margin-bottom: var(--spacing-md);
+    font-style: italic;
+}
+
+.meeting-info {
+    margin-bottom: var(--spacing-sm);
+}
+
+.calendar-link {
+    text-decoration: none;
+    font-size: var(--font-size-normal);
+}
+
+/* Talk styles */
+.talks-container {
+    margin-bottom: var(--spacing-xxl);
+    text-align: left;
+}
+
+.talk {
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid #eee;
+}
+
+.talk-header {
+    cursor: pointer;
+    padding: var(--spacing-xs) 0;
+    transition: background-color var(--transition-fast);
+}
+
+.talk-header div {
+    line-height: 1.4;
+}
+
+.talk-header strong {
+    font-weight: bold;
+    font-size: var(--font-size-normal);
+}
+
+.talk-header h4 {
+    font-size: var(--font-size-talk-title);
+    font-weight: bold;
+    margin: 8px 0;
+    line-height: 1.3;
+}
+
+.talk-header h3 {
+    font-size: var(--font-size-talk-speaker);
+    font-weight: bold;
+    margin: 8px 0 var(--spacing-md) 0;
+}
+
+.talk-abstract {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-normal);
+    padding: 0;
+    margin-top: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+}
+
+.talk-abstract.expanded {
+    max-height: 1000px;
+    padding: var(--spacing-md);
+}
+
+.talk-abstract-content {
+    font-size: var(--font-size-normal);
+    line-height: 1.5;
+}
+
+/* Past seminars page */
+.past-semester {
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.past-semester h3 {
+    margin-bottom: var(--spacing-xs);
+    font-size: 18px;
+}
+
+.past-semester p {
+    margin-bottom: var(--spacing-sm);
+}
+
+.past-semester a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    margin-top: var(--spacing-xxxl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid #ccc;
+    font-size: var(--font-size-small);
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+/* Loading and error states */
+.loading {
+    text-align: center;
+    padding: var(--spacing-xxxl);
+    font-style: italic;
+}
+
+.error {
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    margin: var(--spacing-lg) 0;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: var(--spacing-sm);
+        padding: var(--spacing-md);
+    }
+    
+    .nav a {
+        display: block;
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .title {
+        font-size: var(--font-size-title-mobile);
+    }
+    
+    .semester-title {
+        font-size: var(--font-size-semester-title-mobile);
+    }
+    
+    .talk-header h4 {
+        font-size: var(--font-size-talk-title-mobile);
+    }
+    
+    .talk-header h3 {
+        font-size: var(--font-size-talk-speaker-mobile);
+    }
+}
