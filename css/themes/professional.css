@@ -1,5 +1,8 @@
 /* Professional Theme - MIT Academic Style */
 
+/* Import Google Sans Code font */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@500&display=swap');
+
 /* Professional mode color scheme */
 .mode-professional {
     --primary-color: #a31f34;
@@ -14,7 +17,7 @@
     --error-bg: #ffe6e6;
     --error-color: #cc0000;
     --shadow: 0 2px 10px rgba(0,0,0,0.1);
-    --font-family-header: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", "Source Code Pro", "Courier New", monospace;
+    --font-family-header: "Google Sans Code", "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", "Source Code Pro", monospace;
 }
 
 /* Apply professional theme */
