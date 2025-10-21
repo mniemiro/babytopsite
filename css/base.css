@@ -61,13 +61,7 @@ body {
     margin: var(--container-margin);
 }
 
-/* Header structure */
-.mit-header {
-    padding: var(--spacing-sm);
-    text-align: center;
-    font-size: var(--font-size-small);
-    margin: calc(-1 * var(--container-padding)) calc(-1 * var(--container-padding)) var(--spacing-lg) calc(-1 * var(--container-padding));
-}
+/* Header structure - removed MIT header */
 
 .title {
     text-align: center;
