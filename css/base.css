@@ -66,7 +66,7 @@ body {
     text-align: center;
     font-size: var(--font-size-title);
     font-weight: bold;
-    margin: var(--spacing-lg) 0;
+    margin: var(--spacing-lg) 0 5px 0;
 }
 
 /* Navigation */

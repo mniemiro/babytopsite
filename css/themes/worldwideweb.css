@@ -62,6 +62,7 @@
     font-size: 32px;
     font-family: var(--font-family-header);
     font-weight: bold;
+    margin: var(--spacing-lg) 0 5px 0;
     animation: rainbow 2s linear infinite;
 }
 
