@@ -37,6 +37,8 @@
 
 .mode-professional .nav a {
     color: var(--primary-color);
+    font-family: var(--font-family-header);
+    font-weight: 500;
 }
 
 .mode-professional .nav a:hover {
