@@ -3,7 +3,7 @@
 /* CSS Custom Properties for theming */
 :root {
     /* Layout */
-    --container-width: 33.333%;
+    --container-width: 50%;
     --container-max-width: 600px;
     --container-min-width: 400px;
     --container-padding: 20px;
