@@ -56,6 +56,12 @@
     border-color: var(--primary-color);
 }
 
+.mode-professional .title-box-left,
+.mode-professional .title-box-right {
+    font-family: var(--font-family-header);
+    font-weight: 500;
+}
+
 .mode-professional .semester-title {
     color: var(--text-color);
     font-family: var(--font-family-header);

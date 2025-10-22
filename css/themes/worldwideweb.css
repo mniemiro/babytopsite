@@ -104,6 +104,12 @@
     box-shadow: 3px 3px 0px var(--border-color);
 }
 
+.mode-worldwideweb .title-box-left,
+.mode-worldwideweb .title-box-right {
+    font-family: var(--font-family-header);
+    font-weight: bold;
+}
+
 .mode-worldwideweb .semester-title {
     color: var(--text-color);
     background: var(--accent-color);
