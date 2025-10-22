@@ -73,6 +73,18 @@ body {
     flex: 1;
     background-color: rgba(163, 31, 52, 0.05);
     margin: 0 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.title-box-left:hover,
+.title-box-right:hover {
+    background-color: rgba(163, 31, 52, 0.15);
 }
 
 .title {
