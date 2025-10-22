@@ -91,7 +91,7 @@ body {
     text-align: center;
     font-size: var(--font-size-title);
     font-weight: bold;
-    margin: var(--spacing-lg) 0 10px 0;
+    margin: 12px 0 10px 0;
 }
 
 /* Navigation */
