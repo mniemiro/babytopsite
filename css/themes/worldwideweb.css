@@ -108,6 +108,7 @@
 .mode-worldwideweb .title-box-right {
     font-family: var(--font-family-header);
     font-weight: bold;
+    color: var(--primary-color);
 }
 
 .mode-worldwideweb .semester-title {

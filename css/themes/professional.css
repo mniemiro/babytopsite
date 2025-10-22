@@ -60,6 +60,7 @@
 .mode-professional .title-box-right {
     font-family: var(--font-family-header);
     font-weight: 500;
+    color: var(--primary-color);
 }
 
 .mode-professional .semester-title {
