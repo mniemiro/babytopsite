@@ -38,12 +38,22 @@
 
 .mode-professional .nav a {
     color: var(--primary-color);
-    font-family: var(--font-family-header);
+    background: var(--container-bg);
+    border: 2px solid var(--border-color-dark);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    display: inline-block;
+    text-decoration: none;
     font-weight: 500;
+    font-family: var(--font-family-header);
+    transition: all 0.3s ease;
 }
 
 .mode-professional .nav a:hover {
-    text-decoration: underline;
+    background: var(--primary-color);
+    color: var(--container-bg);
+    border-color: var(--primary-color);
 }
 
 .mode-professional .semester-title {
