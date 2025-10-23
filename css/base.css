@@ -14,7 +14,7 @@
     --font-size-small: 12px;
     --font-size-normal: 14px;
     --font-size-large: 16px;
-    --font-size-title: 36px;
+    --font-size-title: 29px;
     --font-size-semester-title: 36px;
     --font-size-semester-title-mobile: 20px;
     --font-size-title-mobile: 24px;
@@ -97,7 +97,7 @@ body {
     text-align: center;
     font-size: var(--font-size-title);
     font-weight: bold;
-    margin: 5px 0 10px 0;
+    margin: 0 0 10px 0;
 }
 
 /* Navigation */
@@ -131,6 +131,12 @@ body {
 .semester-description {
     margin-bottom: var(--spacing-md);
     font-style: italic;
+}
+
+.organizer-info {
+    margin-bottom: var(--spacing-sm);
+    font-style: italic;
+    font-size: var(--font-size-normal);
 }
 
 .meeting-info {
