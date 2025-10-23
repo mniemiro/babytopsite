@@ -87,6 +87,12 @@ body {
     background-color: rgba(163, 31, 52, 0.15);
 }
 
+.title-box-left.active,
+.title-box-right.active {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
 .title {
     text-align: center;
     font-size: var(--font-size-title);
