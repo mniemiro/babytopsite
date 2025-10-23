@@ -132,6 +132,7 @@ body {
     margin: 0 auto 6px auto;
     max-width: 80%;
     text-align: justify;
+    text-align-last: center;
 }
 
 .organizer-info {
@@ -144,6 +145,7 @@ body {
     margin: 0 auto 5px auto;
     max-width: 80%;
     text-align: justify;
+    text-align-last: center;
 }
 
 .calendar-link {
