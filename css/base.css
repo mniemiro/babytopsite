@@ -129,7 +129,7 @@ body {
 }
 
 .semester-description {
-    margin-bottom: 6px;
+    margin-bottom: 0;
     width: 80%;
     display: inline-block;
 }
@@ -150,7 +150,7 @@ body {
     text-decoration: none;
     font-size: var(--font-size-normal);
     display: inline-block;
-    width: 50%;
+    width: 35%;
 }
 
 /* Talk styles */
