@@ -125,6 +125,7 @@ body {
     font-size: var(--font-size-semester-title);
     font-weight: bold;
     margin-bottom: var(--spacing-md);
+    padding-top: 15px;
 }
 
 .semester-description {
