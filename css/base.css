@@ -154,6 +154,7 @@ body {
     font-size: var(--font-size-normal);
     display: inline-block;
     width: 35%;
+    line-height: 1;
 }
 
 /* Talk styles */
