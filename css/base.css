@@ -130,6 +130,8 @@ body {
 
 .semester-description {
     margin-bottom: 6px;
+    width: 80%;
+    display: inline-block;
 }
 
 .organizer-info {
@@ -140,11 +142,15 @@ body {
 
 .meeting-info {
     margin-bottom: var(--spacing-sm);
+    width: 80%;
+    display: inline-block;
 }
 
 .calendar-link {
     text-decoration: none;
     font-size: var(--font-size-normal);
+    display: inline-block;
+    width: 50%;
 }
 
 /* Talk styles */
