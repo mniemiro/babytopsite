@@ -129,9 +129,8 @@ body {
 }
 
 .semester-description {
-    margin-bottom: -8px;
-    width: 80%;
-    display: inline-block;
+    margin-bottom: 6px;
+    max-width: 80%;
 }
 
 .organizer-info {
@@ -142,8 +141,7 @@ body {
 
 .meeting-info {
     margin-bottom: 5px;
-    width: 80%;
-    display: inline-block;
+    max-width: 80%;
 }
 
 .calendar-link {
