@@ -23,7 +23,7 @@
 /* Apply professional theme */
 .mode-professional body {
     background-color: var(--background-color);
-    font-family: "Yrsa", "Times New Roman", Times, serif;
+    font-family: "Yrsa", "Times New Roman", Times, serif !important;
 }
 
 .mode-professional .container {
