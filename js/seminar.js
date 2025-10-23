@@ -93,7 +93,7 @@ class SeminarRenderer {
         }
 
         if (semesterDescription) {
-            semesterDescription.textContent = `This semester, Babytop will focus on ${data.topic}.`;
+            semesterDescription.textContent = data.topic;
         }
 
         if (meetingInfo) {
