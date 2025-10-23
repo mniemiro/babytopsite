@@ -21,6 +21,10 @@
 }
 
 /* Apply professional theme */
+.mode-professional {
+    font-family: "Yrsa", "Times New Roman", Times, serif !important;
+}
+
 .mode-professional body {
     background-color: var(--background-color);
     font-family: "Yrsa", "Times New Roman", Times, serif !important;
