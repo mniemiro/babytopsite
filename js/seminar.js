@@ -80,13 +80,13 @@ class SeminarRenderer {
         if (organizerInfo) {
             const organizers = data.organizers || [];
             if (organizers.length === 1) {
-                organizerInfo.textContent = `Organized by ${organizers[0]}`;
+                organizerInfo.textContent = `Organizer: ${organizers[0]}`;
             } else if (organizers.length === 2) {
-                organizerInfo.textContent = `Organized by ${organizers[0]} and ${organizers[1]}`;
+                organizerInfo.textContent = `Organizers: ${organizers[0]} and ${organizers[1]}`;
             } else if (organizers.length > 2) {
                 const lastOrganizer = organizers[organizers.length - 1];
                 const otherOrganizers = organizers.slice(0, -1).join(', ');
-                organizerInfo.textContent = `Organized by ${otherOrganizers}, and ${lastOrganizer}`;
+                organizerInfo.textContent = `Organizers: ${otherOrganizers}, and ${lastOrganizer}`;
             } else {
                 organizerInfo.textContent = '';
             }

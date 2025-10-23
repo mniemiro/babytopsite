@@ -129,8 +129,7 @@ body {
 }
 
 .semester-description {
-    margin-bottom: var(--spacing-md);
-    font-style: italic;
+    margin-bottom: 12px;
 }
 
 .organizer-info {
