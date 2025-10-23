@@ -89,8 +89,8 @@ body {
 
 .title-box-left.active,
 .title-box-right.active {
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-top: 1px solid rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 .title {
