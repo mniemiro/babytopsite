@@ -133,6 +133,7 @@ body {
     max-width: 72%;
     text-align: justify;
     text-align-last: center;
+    line-height: 1;
 }
 
 .organizer-info {
