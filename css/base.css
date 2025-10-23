@@ -141,7 +141,7 @@ body {
 }
 
 .meeting-info {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: 5px;
     width: 80%;
     display: inline-block;
 }
