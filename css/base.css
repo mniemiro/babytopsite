@@ -124,7 +124,7 @@ body {
 .semester-title {
     font-size: var(--font-size-semester-title);
     font-weight: bold;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: 8px;
     padding-top: 15px;
 }
 
