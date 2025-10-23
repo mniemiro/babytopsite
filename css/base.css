@@ -124,13 +124,14 @@ body {
 .semester-title {
     font-size: var(--font-size-semester-title);
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     padding-top: 15px;
 }
 
 .semester-description {
     margin: 0 auto 6px auto;
     max-width: 80%;
+    text-align: left;
 }
 
 .organizer-info {
@@ -142,6 +143,7 @@ body {
 .meeting-info {
     margin: 0 auto 5px auto;
     max-width: 80%;
+    text-align: left;
 }
 
 .calendar-link {
