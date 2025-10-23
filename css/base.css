@@ -130,7 +130,7 @@ body {
 
 .semester-description {
     margin: 0 auto 6px auto;
-    max-width: 80%;
+    max-width: 72%;
     text-align: justify;
     text-align-last: center;
 }
@@ -143,7 +143,7 @@ body {
 
 .meeting-info {
     margin: 0 auto 5px auto;
-    max-width: 80%;
+    max-width: 72%;
     text-align: justify;
     text-align-last: center;
 }
