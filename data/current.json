@@ -6,28 +6,94 @@
   "organizers": ["Matthew Niemiro", "Logan Hyslop"],
   "talks": [
     {
-      "date": "Feb 18",
+      "date": "Sep 9",
       "year": "2025",
-      "title": "Descent, Adams spectral sequences, and further Spec(MU)lation",
-      "speaker": "Keita Allen",
-      "affiliation": "MIT",
-      "abstract": "The theory of (faithfully flat) descent provides a way of understanding a ring in terms of an algebra over it, which can be very useful when the base ring is complicated. An analogue of these ideas in the stable homotopy category, where we consider ring spectra and algebras over them, leads to the Adams spectral sequence; we obtain a systematic way of studying the sphere spectrum by \"resolving\" it in terms of another, easier to understand, ring spectrum. A surprising discovery of Quillen tells us that when we use the complex cobordism spectrum MU to resolve the sphere, we obtain a spectral sequence with input coming from the purely algebraic theory of formal groups. This provides another plan of attack for understanding the homotopy groups of spheres, and stable homotopy theory more broadly; understanding how formal groups are organized can in turn help us understand how homotopy theory is organized. This turns out to be very effective, and is the basis for what has become known as chromatic homotopy theory. In my talk, I will give an overview of how some of these ideas are developed, emphasizing the analogy with algebra, and highlight some important characters who we will be seeing later."
-    },
-    {
-      "date": "Feb 25",
-      "year": "2025",
-      "title": "Spectra and formal groups",
-      "speaker": "Oakley Edens",
+      "title": "Introduction to trace methods",
+      "speaker": "Logan Hyslop",
       "affiliation": "Harvard",
-      "abstract": "In the previous talk, we saw that the behaviour of the complex cobordism spectrum MU controls homotopy groups of spheres via the Adams-Novikov spectral sequence. In this talk, I will further discuss how MU can be used to relate topology and algebra via formal group laws. This will lead to defining the moduli stack of formal groups, which will be a central focus of the remaining talks. Finally, via the theory of Hopf algebroids, we will show how one can associate, to any spectrum, certain quasi-coherent sheaves on the moduli stack of formal groups."
+      "abstract": "We will introduce the scope of the seminar, review the syllabus, and canvas speakers."
     },
     {
-      "date": "Mar 4",
+      "date": "Sep 16",
       "year": "2025",
-      "title": "Stack to the Future",
+      "title": "An introduction to Hochschild homology",
+      "speaker": "Ari Krishna",
+      "affiliation": "Harvard",
+      "abstract": "We introduce Hochschild homology, which may be motivated as follows: given an associative algebra A and an A-bimodule M, we may ask for a universal A-bimodule from M for which the left and right actions agree. We will discuss how to compute it, talk about the bar resolution, and make explicit the relationship to the derived world via Tor. Lastly, we will discuss the HKR isomorphism relating Hochschild homology of smooth algebras to algebras of differential forms."
+    },
+    {
+      "date": "Sep 23",
+      "year": "2025",
+      "title": "HKR and derived categories",
       "speaker": "Tyler Lane",
       "affiliation": "Harvard",
-      "abstract": "As the title suggests, this talk is all about the moduli stack of formal groups. I'll begin by presenting the moduli stack of formal groups as a quotient stack. Then I'll discuss the height filtration and some of its basic properties. One of my main goals is to present some theorems about quasi-coherent sheaves on the stack of formal group which will serve as inspiration for some corresponding results in chromatic homotopy theory. Finally I will discuss the Landweber exact functor theorem."
-    }
+      "abstract": "We introduce some derived algebraic geometry and use it to prove a stronger version of the HKR isomorphism due to Ben-Zvi and Nadler."
+    },
+    {
+      "date": "Sep 30",
+      "year": "2025",
+      "title": "Cyclic homology",
+      "speaker": "Oakley Edens",
+      "affiliation": "Harvard",
+      "abstract": "In this talk, we will continue the discussion of the last two talks by defining a new homology theory called cyclic homology which we construct from Hochschild homology by taking group homology with respect to the various cyclic group actions on the cyclic bar complex. We give some intuition for this construction as "taking homotopy orbits for the S^1-action on Hochschild homology", something that will be elaborated on in future talks. We then discuss the Connes periodicity sequences for cyclic homology, the comparison with de Rham cohomology and the λ-decomposition on cyclic homology."
+    },
+    {
+      "date": "Oct 7",
+      "year": "2025",
+      "title": "Application: Lie algebra homology",
+      "speaker": "Jonathan Buchanan",
+      "affiliation": "MIT",
+      "abstract": "In this talk, we will discuss the Loday--Quillen--Tsygan theorem, which gives an isomorphism between the Lie algebra homology of the Lie algebra of matrices in some k-algebra A to the cyclic homology of A. We explain how to lift the trace map from \gl(A) to A to a map of cyclic homologies and use this to construct the isomorphism."
+    },
+    {
+      "date": "Oct 14",
+      "year": "2025",
+      "title": "Circle Actions I",
+      "speaker": "Matthew Niemiro",
+      "affiliation": "Harvard",
+      "abstract": "Nor’easters usually occur when tropical Gulf Stream currents come up and off the Atlantic and meet colder arctic air masses coming down from Canada. In more ways than one, a nor’easter is here—in this talk, I will explain the less evident vortex of frigid algebra and humid topology that underscores the meteorological event which threatened my flight here and my bike ride to the gym. To be precise, I will present some models for our current algebraic formulations of Hochschild-type invariants and dwell upon the presence of S^1-actions in these models. This will offer alternative, new, and perhaps even interesting formulations of certain properties of our invariants that will be important moving forward. Time permitting, we may say something about consequences for the homology of group algebras."
+    },
+    {
+      "date": "Oct 21",
+      "year": "2025",
+      "title": "Circle Actions II",
+      "speaker": "Samuel Munoz",
+      "affiliation": "MIT",
+      "abstract": "Title: Circle actions, again
+
+Abstract: Last time, we discussed three different ways to model the S^1-action on Hochschild homology, which lead to a better description of cyclic homologies. In this talk, I will use some of these models to explore several examples, including the cyclic homology of a cyclic space. As a consequence, we will see an interesting relationship between cyclic homology and S^1-equivariant homology of free loop spaces."
+    },
+    {
+      "date": "Oct 28",
+      "year": "2025",
+      "title": "Algebraic K-theory I",
+      "speaker": "Tyler Lane",
+      "affiliation": "Harvard",
+      "abstract": ""
+    },
+    {
+      "date": "Nov 14",
+      "year": "2025",
+      "title": "Algebraic K-theory II",
+      "speaker": "Tyler Lane",
+      "affiliation": "Harvard",
+      "abstract": ""
+    },
+    {
+      "date": "Nov 21",
+      "year": "2025",
+      "title": "TBD",
+      "speaker": "Dhilan Lahoti",
+      "affiliation": "Harvard",
+      "abstract": "TBA"
+    },
+    {
+      "date": "Nov 4",
+      "year": "2025",
+      "title": "Operator Theory Origins",
+      "speaker": "Natalie Stewart",
+      "affiliation": "Harvard",
+      "abstract": "TBA"
+    },
   ]
 }
