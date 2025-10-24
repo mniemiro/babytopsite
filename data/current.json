@@ -59,9 +59,7 @@
       "title": "Circle Actions II",
       "speaker": "Samuel Munoz",
       "affiliation": "MIT",
-      "abstract": "Title: Circle actions, again
-
-Abstract: Last time, we discussed three different ways to model the S^1-action on Hochschild homology, which lead to a better description of cyclic homologies. In this talk, I will use some of these models to explore several examples, including the cyclic homology of a cyclic space. As a consequence, we will see an interesting relationship between cyclic homology and S^1-equivariant homology of free loop spaces."
+      "abstract": "Last time, we discussed three different ways to model the S^1-action on Hochschild homology, which lead to a better description of cyclic homologies. In this talk, I will use some of these models to explore several examples, including the cyclic homology of a cyclic space. As a consequence, we will see an interesting relationship between cyclic homology and S^1-equivariant homology of free loop spaces."
     },
     {
       "date": "Oct 28",
