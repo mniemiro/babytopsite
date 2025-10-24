@@ -43,7 +43,7 @@
       "title": "Application: Lie algebra homology",
       "speaker": "Jonathan Buchanan",
       "affiliation": "MIT",
-      "abstract": "In this talk, we will discuss the Loday--Quillen--Tsygan theorem, which gives an isomorphism between the Lie algebra homology of the Lie algebra of matrices in some k-algebra A to the cyclic homology of A. We explain how to lift the trace map from \gl(A) to A to a map of cyclic homologies and use this to construct the isomorphism."
+      "abstract": "In this talk, we will discuss the Loday--Quillen--Tsygan theorem, which gives an isomorphism between the Lie algebra homology of the Lie algebra of matrices in some k-algebra A to the cyclic homology of A. We explain how to lift the trace map from gl(A) to A to a map of cyclic homologies and use this to construct the isomorphism."
     },
     {
       "date": "Oct 14",
