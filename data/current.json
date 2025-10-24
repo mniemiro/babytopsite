@@ -35,7 +35,7 @@
       "title": "Cyclic homology",
       "speaker": "Oakley Edens",
       "affiliation": "Harvard",
-      "abstract": "In this talk, we will continue the discussion of the last two talks by defining a new homology theory called cyclic homology which we construct from Hochschild homology by taking group homology with respect to the various cyclic group actions on the cyclic bar complex. We give some intuition for this construction as "taking homotopy orbits for the S^1-action on Hochschild homology", something that will be elaborated on in future talks. We then discuss the Connes periodicity sequences for cyclic homology, the comparison with de Rham cohomology and the λ-decomposition on cyclic homology."
+      "abstract": "In this talk, we will continue the discussion of the last two talks by defining a new homology theory called cyclic homology which we construct from Hochschild homology by taking group homology with respect to the various cyclic group actions on the cyclic bar complex. We give some intuition for this construction as \"taking homotopy orbits for the S^1-action on Hochschild homology\", something that will be elaborated on in future talks. We then discuss the Connes periodicity sequences for cyclic homology, the comparison with de Rham cohomology and the λ-decomposition on cyclic homology."
     },
     {
       "date": "Oct 7",
