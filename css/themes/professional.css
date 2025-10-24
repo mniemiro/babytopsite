@@ -68,7 +68,7 @@
 }
 
 .mode-professional .semester-title {
-    color: var(--text-color);
+    color: #000;
     font-family: var(--font-family-header);
     font-weight: 500;
 }
