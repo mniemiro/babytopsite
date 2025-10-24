@@ -90,35 +90,59 @@
 }
 
 .mode-professional .talk {
-    border-bottom-color: var(--border-color);
+    border-color: var(--border-color);
+    background-color: var(--container-bg);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
-.mode-professional .talk-header:hover {
-    background-color: var(--hover-bg);
+.mode-professional .talk:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(163, 31, 52, 0.15);
 }
 
-.mode-professional .talk-header strong {
+.mode-professional .talk-date {
+    color: var(--primary-color);
+    font-family: var(--font-family-header);
+    font-weight: 500;
+}
+
+.mode-professional .talk-title {
     color: var(--text-color);
+    font-family: var(--font-family-header);
+    font-weight: 600;
 }
 
-.mode-professional .talk-header h4 {
+.mode-professional .talk-speaker {
     color: var(--text-color);
     font-family: var(--font-family-header);
     font-weight: 500;
 }
 
-.mode-professional .talk-header h3 {
-    color: var(--text-color);
-    font-family: var(--font-family-header);
-    font-weight: 500;
+.mode-professional .talk-affiliation {
+    color: var(--text-color-muted);
+}
+
+.mode-professional .talk-expand-indicator {
+    color: var(--primary-color);
+    opacity: 0.6;
+}
+
+.mode-professional .talk-header:hover .talk-expand-indicator {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
 }
 
 .mode-professional .talk-abstract {
     background-color: var(--hover-bg);
+    border-color: var(--border-color);
 }
 
 .mode-professional .talk-abstract-content {
     color: var(--text-color);
+}
+
+.mode-professional .talk-abstract-content::first-letter {
+    color: var(--primary-color);
 }
 
 .mode-professional .past-semester {

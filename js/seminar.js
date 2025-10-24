@@ -145,15 +145,30 @@ class SeminarRenderer {
         headerDiv.className = 'talk-header';
         headerDiv.addEventListener('click', () => this.toggleAbstract(index));
 
-        // Create the talk content with proper formatting
-        const talkContent = document.createElement('div');
-        talkContent.innerHTML = `
-            * <strong>**${talk.date}** ${talk.year}</strong><br>
-            #### ${talk.title}<br>
-            ### ${talk.speaker} (${talk.affiliation})
-        `;
+        // Create date element
+        const dateDiv = document.createElement('div');
+        dateDiv.className = 'talk-date';
+        dateDiv.textContent = `${talk.date} ${talk.year}`;
 
-        headerDiv.appendChild(talkContent);
+        // Create title element
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'talk-title';
+        titleDiv.textContent = talk.title;
+
+        // Create speaker element
+        const speakerDiv = document.createElement('div');
+        speakerDiv.className = 'talk-speaker';
+        speakerDiv.innerHTML = `${talk.speaker} <span class="talk-affiliation">(${talk.affiliation})</span>`;
+
+        // Create expand indicator
+        const expandIndicator = document.createElement('div');
+        expandIndicator.className = 'talk-expand-indicator';
+        expandIndicator.textContent = '▼';
+
+        headerDiv.appendChild(dateDiv);
+        headerDiv.appendChild(titleDiv);
+        headerDiv.appendChild(speakerDiv);
+        headerDiv.appendChild(expandIndicator);
 
         const abstractDiv = document.createElement('div');
         abstractDiv.className = 'talk-abstract';
@@ -173,8 +188,23 @@ class SeminarRenderer {
 
     toggleAbstract(index) {
         const abstract = document.getElementById(`abstract-${index}`);
+        const talkElement = abstract?.closest('.talk');
+        const expandIndicator = talkElement?.querySelector('.talk-expand-indicator');
+        
         if (abstract) {
+            const isExpanded = abstract.classList.contains('expanded');
             abstract.classList.toggle('expanded');
+            
+            // Animate the expand indicator
+            if (expandIndicator) {
+                if (isExpanded) {
+                    expandIndicator.textContent = '▼';
+                    expandIndicator.style.transform = 'translateY(-50%) rotate(0deg)';
+                } else {
+                    expandIndicator.textContent = '▲';
+                    expandIndicator.style.transform = 'translateY(-50%) rotate(0deg)';
+                }
+            }
         }
     }
 }
