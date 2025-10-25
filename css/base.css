@@ -181,8 +181,11 @@ body {
 .talk-header {
     cursor: pointer;
     padding: 0;
+    margin: 0;
     transition: all var(--transition-fast);
     position: relative;
+    height: auto;
+    min-height: auto;
 }
 
 .talk-header:hover {
@@ -222,16 +225,15 @@ body {
 .talk-expand-indicator {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 18px;
     color: #bdc3c7;
     transition: transform var(--transition-fast);
-    display: none;
 }
 
 .talk-header:hover .talk-expand-indicator {
     color: #95a5a6;
-    display: block;
 }
 
 .talk-abstract {
