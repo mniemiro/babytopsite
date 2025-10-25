@@ -160,15 +160,9 @@ class SeminarRenderer {
         speakerDiv.className = 'talk-speaker';
         speakerDiv.innerHTML = `${talk.speaker} <span class="talk-affiliation">(${talk.affiliation})</span>`;
 
-        // Create expand indicator
-        const expandIndicator = document.createElement('div');
-        expandIndicator.className = 'talk-expand-indicator';
-        expandIndicator.textContent = '▼';
-
         headerDiv.appendChild(dateDiv);
         headerDiv.appendChild(titleDiv);
         headerDiv.appendChild(speakerDiv);
-        headerDiv.appendChild(expandIndicator);
 
         const abstractDiv = document.createElement('div');
         abstractDiv.className = 'talk-abstract';
@@ -189,21 +183,17 @@ class SeminarRenderer {
     toggleAbstract(index) {
         const abstract = document.getElementById(`abstract-${index}`);
         const talkElement = abstract?.closest('.talk');
-        const expandIndicator = talkElement?.querySelector('.talk-expand-indicator');
+        const headerElement = talkElement?.querySelector('.talk-header');
         
-        if (abstract) {
+        if (abstract && headerElement) {
             const isExpanded = abstract.classList.contains('expanded');
             abstract.classList.toggle('expanded');
             
-            // Animate the expand indicator
-            if (expandIndicator) {
-                if (isExpanded) {
-                    expandIndicator.textContent = '▼';
-                    expandIndicator.style.transform = 'translateY(-50%) rotate(0deg)';
-                } else {
-                    expandIndicator.textContent = '▲';
-                    expandIndicator.style.transform = 'translateY(-50%) rotate(0deg)';
-                }
+            // Toggle the CSS class to change the arrow direction
+            if (isExpanded) {
+                headerElement.classList.remove('expanded');
+            } else {
+                headerElement.classList.add('expanded');
             }
         }
     }

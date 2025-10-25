@@ -122,14 +122,14 @@
     color: var(--text-color-muted);
 }
 
-.mode-professional .talk-expand-indicator {
+.mode-professional .talk-header::after {
     color: var(--primary-color);
     opacity: 0.6;
 }
 
-.mode-professional .talk-header:hover .talk-expand-indicator {
+.mode-professional .talk-header:hover::after {
     opacity: 1;
-    transform: scale(1.1);
+    transform: translateY(-50%) scale(1.1);
 }
 
 .mode-professional .talk-abstract {
