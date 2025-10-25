@@ -255,17 +255,17 @@ body {
 
 .talk-expand-indicator {
     position: absolute;
-    left: -43px;
+    left: -47px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 18px;
+    font-size: 20px;
     color: #bdc3c7;
     transition: transform var(--transition-fast);
     z-index: 10;
 }
 
 .talk-title:hover .talk-expand-indicator {
-    color: #95a5a6;
+    /* Color change removed - keeping original color */
 }
 
 .talk-abstract {

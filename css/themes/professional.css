@@ -128,8 +128,7 @@
 }
 
 .mode-professional .talk-title:hover .talk-expand-indicator {
-    opacity: 1;
-    transform: translateY(-50%) scale(1.1);
+    /* Hover effects removed - keeping original styling */
 }
 
 .mode-professional .talk-abstract {
