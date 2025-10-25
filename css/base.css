@@ -250,7 +250,8 @@ body {
 
 .talk-abstract.expanded {
     max-height: 1000px;
-    padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-lg) var(--spacing-lg);
+    height: auto;
+    padding: var(--spacing-lg);
     margin-top: var(--spacing-md);
 }
 
