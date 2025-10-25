@@ -74,11 +74,6 @@ body {
 
 .logo-link {
     display: block;
-    transition: opacity var(--transition-fast);
-}
-
-.logo-link:hover {
-    opacity: 0.8;
 }
 
 .logo {
@@ -88,6 +83,10 @@ body {
 
 .harvard-logo {
     height: 26.4px; /* 55% of 48px */
+}
+
+.mit-logo {
+    height: 36px; /* 75% of 48px */
 }
 
 /* Title box styling */
@@ -411,5 +410,9 @@ body {
     
     .harvard-logo {
         height: 19.8px; /* 55% of 36px */
+    }
+    
+    .mit-logo {
+        height: 27px; /* 75% of 36px */
     }
 }
