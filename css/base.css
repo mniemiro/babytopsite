@@ -259,7 +259,7 @@ body {
     font-size: 14px;
     line-height: 1.1;
     color: #2c3e50;
-    text-align: justify;
+    text-align: left;
     transition: opacity 0.1s ease;
     font-family: 'Courier New', monospace;
 }
