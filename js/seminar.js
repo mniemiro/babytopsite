@@ -153,7 +153,7 @@ class SeminarRenderer {
         // Create title element
         const titleDiv = document.createElement('div');
         titleDiv.className = 'talk-title';
-        titleDiv.textContent = talk.title;
+        titleDiv.textContent = talk.title && talk.title.trim() ? talk.title : 'TBA';
 
         // Create speaker element
         const speakerDiv = document.createElement('div');
@@ -176,7 +176,7 @@ class SeminarRenderer {
 
         const abstractContent = document.createElement('div');
         abstractContent.className = 'talk-abstract-content';
-        abstractContent.textContent = talk.abstract;
+        abstractContent.textContent = talk.abstract && talk.abstract.trim() ? talk.abstract : 'TBA';
 
         abstractDiv.appendChild(abstractContent);
 
