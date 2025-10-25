@@ -248,7 +248,7 @@ class SeminarRenderer {
     }
 
     scrambleText(originalText, characters, progress) {
-        const scrambleIntensity = Math.max(0.1, 0.75 - progress); // Start at 75% scrambling, reduce over time
+        const scrambleIntensity = Math.max(0.1, 0.5 - progress); // Start at 50% scrambling, reduce over time
         const scrambledChars = originalText.split('').map(char => {
             // Skip spaces and punctuation for readability
             if (char === ' ' || char === '.' || char === ',' || char === '!' || char === '?' || char === ';' || char === ':') {
