@@ -219,7 +219,7 @@ class SeminarRenderer {
     }
 
     startScrambledTextAnimation(element, originalText) {
-        const scrambleDuration = 800; // Total duration of scrambling effect
+        const scrambleDuration = 450; // Total duration of scrambling effect
         const revealDuration = 200; // Duration for final reveal
         const scrambleInterval = 50; // How often to update scrambled text
         
@@ -248,7 +248,7 @@ class SeminarRenderer {
     }
 
     scrambleText(originalText, characters, progress) {
-        const scrambleIntensity = Math.max(0.1, 1 - progress); // Start with high scrambling, reduce over time
+        const scrambleIntensity = Math.max(0.1, 0.75 - progress); // Start at 75% scrambling, reduce over time
         const scrambledChars = originalText.split('').map(char => {
             // Skip spaces and punctuation for readability
             if (char === ' ' || char === '.' || char === ',' || char === '!' || char === '?' || char === ';' || char === ':') {
