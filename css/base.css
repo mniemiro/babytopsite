@@ -86,6 +86,10 @@ body {
     width: auto;
 }
 
+.harvard-logo {
+    height: 26.4px; /* 55% of 48px */
+}
+
 /* Title box styling */
 .title-box {
     width: 100%;
@@ -403,5 +407,9 @@ body {
     
     .logo {
         height: 36px;
+    }
+    
+    .harvard-logo {
+        height: 19.8px; /* 55% of 36px */
     }
 }
