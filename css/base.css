@@ -213,12 +213,12 @@ body {
     font-size: var(--font-size-talk-speaker);
     font-weight: 500;
     margin: var(--spacing-sm) 0 0 0;
-    color: #7f8c8d;
+    color: #000000;
     font-style: italic;
 }
 
 .talk-affiliation {
-    color: #7f8c8d;
+    color: #000000;
     font-weight: normal;
 }
 
