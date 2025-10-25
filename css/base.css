@@ -189,25 +189,6 @@ body {
     transform: translateY(-1px);
 }
 
-.talk-header::after {
-    content: '▼';
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 18px;
-    color: #bdc3c7;
-    transition: transform var(--transition-fast);
-}
-
-.talk-header:hover::after {
-    color: #95a5a6;
-}
-
-.talk-header.expanded::after {
-    content: '▲';
-}
-
 .talk-date {
     font-size: var(--font-size-small);
     color: #666;
@@ -228,7 +209,7 @@ body {
 .talk-speaker {
     font-size: var(--font-size-talk-speaker);
     font-weight: 500;
-    margin: var(--spacing-sm) 0 var(--spacing-xs) 0;
+    margin: var(--spacing-sm) 0 var(--spacing-md) 0;
     color: #34495e;
     font-style: italic;
 }
@@ -236,6 +217,21 @@ body {
 .talk-affiliation {
     color: #7f8c8d;
     font-weight: normal;
+}
+
+.talk-expand-indicator {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 18px;
+    color: #bdc3c7;
+    transition: transform var(--transition-fast);
+    display: none;
+}
+
+.talk-header:hover .talk-expand-indicator {
+    color: #95a5a6;
+    display: block;
 }
 
 .talk-abstract {
