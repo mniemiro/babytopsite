@@ -127,7 +127,7 @@
     opacity: 0.6;
 }
 
-.mode-professional .talk-header:hover .talk-expand-indicator {
+.mode-professional .talk-title:hover .talk-expand-indicator {
     opacity: 1;
     transform: translateY(-50%) scale(1.1);
 }

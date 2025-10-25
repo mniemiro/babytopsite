@@ -143,7 +143,6 @@ class SeminarRenderer {
 
         const headerDiv = document.createElement('div');
         headerDiv.className = 'talk-header';
-        headerDiv.addEventListener('click', () => this.toggleAbstract(index));
 
         // Create date element
         const dateDiv = document.createElement('div');
@@ -154,6 +153,7 @@ class SeminarRenderer {
         const titleDiv = document.createElement('div');
         titleDiv.className = 'talk-title';
         titleDiv.textContent = talk.title && talk.title.trim() ? talk.title : 'TBA';
+        titleDiv.addEventListener('click', () => this.toggleAbstract(index));
 
         // Create speaker element
         const speakerDiv = document.createElement('div');
@@ -168,7 +168,10 @@ class SeminarRenderer {
         headerDiv.appendChild(dateDiv);
         headerDiv.appendChild(titleDiv);
         headerDiv.appendChild(speakerDiv);
-        headerDiv.appendChild(expandIndicator);
+        
+        // Position expander relative to the title
+        titleDiv.style.position = 'relative';
+        titleDiv.appendChild(expandIndicator);
 
         const abstractDiv = document.createElement('div');
         abstractDiv.className = 'talk-abstract';
