@@ -58,6 +58,32 @@ body {
     min-width: var(--container-min-width);
     padding: var(--container-padding);
     margin: var(--container-margin);
+    position: relative;
+}
+
+/* Logo styling */
+.logos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: var(--spacing-sm);
+    z-index: var(--z-dropdown);
+}
+
+.logo-link {
+    display: block;
+    transition: opacity var(--transition-fast);
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    max-width: 80px;
 }
 
 /* Title box styling */
@@ -373,5 +399,10 @@ body {
     
     .talk-abstract.expanded {
         padding: var(--spacing-md);
+    }
+    
+    .logo {
+        height: 30px;
+        max-width: 60px;
     }
 }
