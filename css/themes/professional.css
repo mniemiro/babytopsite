@@ -167,19 +167,6 @@
     text-decoration: underline;
 }
 
-.mode-professional .footer {
-    border-top-color: var(--border-color-darker);
-    color: var(--text-color-muted);
-}
-
-.mode-professional .footer a {
-    color: var(--primary-color);
-}
-
-.mode-professional .footer a:hover {
-    text-decoration: underline;
-}
-
 .mode-professional .loading {
     color: var(--text-color-muted);
 }

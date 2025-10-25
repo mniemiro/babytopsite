@@ -287,35 +287,6 @@
     box-shadow: 3px 3px 0px var(--border-color);
 }
 
-.mode-worldwideweb .footer {
-    border-top: 3px solid var(--border-color);
-    background: var(--accent-color);
-    border-radius: 10px;
-    margin-top: 40px;
-    padding: 20px;
-    color: var(--text-color);
-    font-weight: bold;
-    text-shadow: 1px 1px 0px var(--primary-color);
-}
-
-.mode-worldwideweb .footer a {
-    color: var(--primary-color);
-    background: var(--container-bg);
-    border: 2px solid var(--border-color);
-    border-radius: 5px;
-    padding: 3px 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.mode-worldwideweb .footer a:hover {
-    background: var(--primary-color);
-    color: var(--container-bg);
-    transform: scale(1.1);
-    box-shadow: 3px 3px 0px var(--border-color);
-}
-
 .mode-worldwideweb .loading {
     color: var(--primary-color);
     background: var(--accent-color);
