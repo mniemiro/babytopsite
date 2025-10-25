@@ -140,6 +140,7 @@ class SeminarRenderer {
     createTalkElement(talk, index) {
         const talkDiv = document.createElement('div');
         talkDiv.className = 'talk';
+        talkDiv.addEventListener('click', () => this.toggleAbstract(index));
 
         const headerDiv = document.createElement('div');
         headerDiv.className = 'talk-header';
@@ -153,7 +154,6 @@ class SeminarRenderer {
         const titleDiv = document.createElement('div');
         titleDiv.className = 'talk-title';
         titleDiv.textContent = talk.title && talk.title.trim() ? talk.title : 'TBA';
-        titleDiv.addEventListener('click', () => this.toggleAbstract(index));
 
         // Create speaker element
         const speakerDiv = document.createElement('div');
