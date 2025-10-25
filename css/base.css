@@ -255,7 +255,7 @@ body {
 
 .talk-expand-indicator {
     position: absolute;
-    left: -40px;
+    left: -43px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 18px;
