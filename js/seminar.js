@@ -219,7 +219,7 @@ class SeminarRenderer {
     }
 
     startScrambledTextAnimation(element, originalText) {
-        const scrambleDuration = 450; // Total duration of scrambling effect
+        const scrambleDuration = 375; // Total duration of scrambling effect
         const revealDuration = 200; // Duration for final reveal
         const scrambleInterval = 50; // How often to update scrambled text
         

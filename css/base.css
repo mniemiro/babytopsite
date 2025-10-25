@@ -256,11 +256,12 @@ body {
 }
 
 .talk-abstract-content {
-    font-size: var(--font-size-normal);
-    line-height: 1.6;
+    font-size: 13px;
+    line-height: 1.1;
     color: #2c3e50;
     text-align: justify;
     transition: opacity 0.1s ease;
+    font-family: 'Courier New', monospace;
 }
 
 .talk-abstract-content::first-letter {
