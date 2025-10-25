@@ -190,22 +190,80 @@ class SeminarRenderer {
         const abstract = document.getElementById(`abstract-${index}`);
         const talkElement = abstract?.closest('.talk');
         const expandIndicator = talkElement?.querySelector('.talk-expand-indicator');
+        const abstractContent = abstract?.querySelector('.talk-abstract-content');
         
-        if (abstract) {
+        if (abstract && abstractContent) {
             const isExpanded = abstract.classList.contains('expanded');
-            abstract.classList.toggle('expanded');
             
-            // Animate the expand indicator
-            if (expandIndicator) {
-                if (isExpanded) {
-                    expandIndicator.textContent = '▼';
-                    expandIndicator.style.transform = 'translateY(-50%) rotate(0deg)';
-                } else {
+            if (!isExpanded) {
+                // Expanding - show scrambled text animation
+                this.startScrambledTextAnimation(abstractContent, abstractContent.textContent);
+                abstract.classList.add('expanded');
+                
+                // Animate the expand indicator
+                if (expandIndicator) {
                     expandIndicator.textContent = '▲';
+                    expandIndicator.style.transform = 'translateY(-50%) rotate(0deg)';
+                }
+            } else {
+                // Collapsing - hide immediately
+                abstract.classList.remove('expanded');
+                
+                // Animate the expand indicator
+                if (expandIndicator) {
+                    expandIndicator.textContent = '▼';
                     expandIndicator.style.transform = 'translateY(-50%) rotate(0deg)';
                 }
             }
         }
+    }
+
+    startScrambledTextAnimation(element, originalText) {
+        const scrambleDuration = 800; // Total duration of scrambling effect
+        const revealDuration = 200; // Duration for final reveal
+        const scrambleInterval = 50; // How often to update scrambled text
+        
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,.<>?';
+        let scrambledText = originalText;
+        let startTime = Date.now();
+        
+        // Add scrambling class for visual effects
+        element.classList.add('scrambling');
+        
+        const scrambleIntervalId = setInterval(() => {
+            const elapsed = Date.now() - startTime;
+            const progress = Math.min(elapsed / scrambleDuration, 1);
+            
+            if (progress < 1) {
+                // Still scrambling - replace random characters
+                scrambledText = this.scrambleText(originalText, characters, progress);
+                element.textContent = scrambledText;
+            } else {
+                // Scrambling complete - reveal original text
+                clearInterval(scrambleIntervalId);
+                element.classList.remove('scrambling');
+                element.textContent = originalText;
+            }
+        }, scrambleInterval);
+    }
+
+    scrambleText(originalText, characters, progress) {
+        const scrambleIntensity = Math.max(0.1, 1 - progress); // Start with high scrambling, reduce over time
+        const scrambledChars = originalText.split('').map(char => {
+            // Skip spaces and punctuation for readability
+            if (char === ' ' || char === '.' || char === ',' || char === '!' || char === '?' || char === ';' || char === ':') {
+                return char;
+            }
+            
+            // Randomly decide whether to scramble this character
+            if (Math.random() < scrambleIntensity) {
+                return characters[Math.floor(Math.random() * characters.length)];
+            }
+            
+            return char;
+        });
+        
+        return scrambledChars.join('');
     }
 }
 
