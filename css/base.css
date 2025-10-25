@@ -241,10 +241,11 @@ body {
     overflow: hidden;
     transition: all var(--transition-normal);
     padding: 0;
-    margin-top: var(--spacing-sm);
+    margin: 0;
     border-radius: var(--border-radius-sm);
     background-color: #ffffff;
     border: none;
+    height: 0;
 }
 
 .talk-abstract.expanded {
