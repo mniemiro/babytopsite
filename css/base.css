@@ -271,8 +271,6 @@ body {
 
 /* Scrambled text effect */
 .talk-abstract-content.scrambling {
-    color: #e74c3c;
-    text-shadow: 0 0 2px rgba(231, 76, 60, 0.3);
     animation: glitch 0.1s infinite;
 }
 
