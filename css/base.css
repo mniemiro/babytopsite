@@ -209,7 +209,7 @@ body {
 .talk-speaker {
     font-size: var(--font-size-talk-speaker);
     font-weight: 500;
-    margin: var(--spacing-sm) 0 var(--spacing-md) 0;
+    margin: var(--spacing-sm) 0 var(--spacing-xs) 0;
     color: #34495e;
     font-style: italic;
 }
