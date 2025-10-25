@@ -222,8 +222,7 @@ body {
 .talk-expand-indicator {
     position: absolute;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
     font-size: 18px;
     color: #bdc3c7;
     transition: transform var(--transition-fast);
