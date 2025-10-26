@@ -83,8 +83,12 @@ body {
 
 .calendar-top-right a {
     text-decoration: none;
-    color: var(--text-color);
+    color: #a31f34;
     line-height: 1.3;
+}
+
+.calendar-top-right a:hover {
+    color: #7a1628;
 }
 
 .logo-link {
