@@ -72,25 +72,6 @@ body {
     z-index: var(--z-dropdown);
 }
 
-.calendar-top-right {
-    position: fixed;
-    top: var(--spacing-sm);
-    right: var(--spacing-sm);
-    text-align: right;
-    font-size: 11px;
-    z-index: var(--z-dropdown);
-}
-
-.calendar-top-right a {
-    text-decoration: none;
-    color: #a31f34;
-    line-height: 1.3;
-}
-
-.calendar-top-right a:hover {
-    color: #7a1628;
-}
-
 .logo-link {
     display: block;
 }
@@ -427,10 +408,6 @@ body {
     }
     
     .logos {
-        display: none;
-    }
-    
-    .calendar-top-right {
         display: none;
     }
 }
