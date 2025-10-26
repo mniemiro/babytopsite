@@ -227,11 +227,14 @@ class SeminarRenderer {
         const scrambleInterval = 50; // How often to update scrambled text
         
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,.<>?';
-        let scrambledText = originalText;
         let startTime = Date.now();
         
         // Add scrambling class for visual effects
         element.classList.add('scrambling');
+        
+        // Show initial scrambled text immediately
+        let initialScrambled = this.scrambleText(originalText, characters, 0);
+        element.textContent = initialScrambled;
         
         const scrambleIntervalId = setInterval(() => {
             const elapsed = Date.now() - startTime;
@@ -239,7 +242,7 @@ class SeminarRenderer {
             
             if (progress < 1) {
                 // Still scrambling - replace random characters
-                scrambledText = this.scrambleText(originalText, characters, progress);
+                const scrambledText = this.scrambleText(originalText, characters, progress);
                 element.textContent = scrambledText;
             } else {
                 // Scrambling complete - reveal original text
