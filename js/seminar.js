@@ -223,7 +223,7 @@ class SeminarRenderer {
     }
 
     startScrambledTextAnimation(element, originalText) {
-        const scrambleDuration = 300; // Total duration of scrambling effect
+        const scrambleDuration = 400; // Total duration of scrambling effect
         const scrambleInterval = 50; // How often to update scrambled text
         
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,.<>?';
@@ -255,8 +255,8 @@ class SeminarRenderer {
 
     scrambleText(originalText, characters, progress) {
         // Inverse-exponential taper: spend more time at low intensity
-        // Starts at ~0.5, quickly drops to ~0.1, stays low most of the time
-        const scrambleIntensity = Math.max(0.1, 0.1 + 0.4 * Math.pow(1 - progress, 3));
+        // Starts at ~0.5, quickly drops to ~0.07, stays low most of the time
+        const scrambleIntensity = Math.max(0.07, 0.07 + 0.43 * Math.pow(1 - progress, 3));
         const scrambledChars = originalText.split('').map(char => {
             // Skip spaces and punctuation for readability
             if (char === ' ' || char === '.' || char === ',' || char === '!' || char === '?' || char === ';' || char === ':') {
