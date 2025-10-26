@@ -72,6 +72,21 @@ body {
     z-index: var(--z-dropdown);
 }
 
+.calendar-top-right {
+    position: fixed;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    text-align: right;
+    font-size: 11px;
+    z-index: var(--z-dropdown);
+}
+
+.calendar-top-right a {
+    text-decoration: none;
+    color: var(--text-color);
+    line-height: 1.3;
+}
+
 .logo-link {
     display: block;
 }
@@ -408,6 +423,10 @@ body {
     }
     
     .logos {
+        display: none;
+    }
+    
+    .calendar-top-right {
         display: none;
     }
 }

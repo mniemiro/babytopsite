@@ -104,6 +104,14 @@ class SeminarRenderer {
             calendarLink.href = data.calendarLink;
             calendarLink.textContent = 'Click here to add the seminar to your Google calendar.';
         }
+
+        // Update top-right calendar link
+        const calendarTopLink = document.getElementById('calendar-top-link');
+        if (calendarTopLink && data.calendarLink) {
+            calendarTopLink.href = data.calendarLink;
+        } else if (calendarTopLink && !data.calendarLink) {
+            calendarTopLink.style.display = 'none';
+        }
     }
 
     renderOrganizers(data) {
