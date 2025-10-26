@@ -74,7 +74,8 @@ class SeminarRenderer {
         const calendarLink = document.getElementById('calendar-link');
 
         if (semesterTitle) {
-            semesterTitle.textContent = data.semester;
+            // Apply scramble effect to title
+            this.startScrambledTextAnimation(semesterTitle, data.semester);
         }
 
         if (organizerInfo) {
@@ -222,8 +223,7 @@ class SeminarRenderer {
     }
 
     startScrambledTextAnimation(element, originalText) {
-        const scrambleDuration = 375; // Total duration of scrambling effect
-        const revealDuration = 200; // Duration for final reveal
+        const scrambleDuration = 300; // Total duration of scrambling effect
         const scrambleInterval = 50; // How often to update scrambled text
         
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,.<>?';
@@ -251,7 +251,9 @@ class SeminarRenderer {
     }
 
     scrambleText(originalText, characters, progress) {
-        const scrambleIntensity = Math.max(0.1, 0.5 - progress); // Start at 50% scrambling, reduce over time
+        // Inverse-exponential taper: spend more time at low intensity
+        // Starts at ~0.5, quickly drops to ~0.1, stays low most of the time
+        const scrambleIntensity = Math.max(0.1, 0.1 + 0.4 * Math.pow(1 - progress, 3));
         const scrambledChars = originalText.split('').map(char => {
             // Skip spaces and punctuation for readability
             if (char === ' ' || char === '.' || char === ',' || char === '!' || char === '?' || char === ';' || char === ':') {
