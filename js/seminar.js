@@ -164,7 +164,7 @@ class SeminarRenderer {
         // Create expand indicator
         const expandIndicator = document.createElement('div');
         expandIndicator.className = 'talk-expand-indicator';
-        expandIndicator.textContent = '⊕';
+        expandIndicator.textContent = '∐';
 
         headerDiv.appendChild(dateDiv);
         headerDiv.appendChild(titleDiv);
@@ -206,7 +206,7 @@ class SeminarRenderer {
                 
                 // Animate the expand indicator
                 if (expandIndicator) {
-                    expandIndicator.textContent = '⊗';
+                    expandIndicator.textContent = '∏';
                     expandIndicator.style.transform = 'translateY(-50%) rotate(0deg)';
                 }
             } else {
@@ -215,7 +215,7 @@ class SeminarRenderer {
                 
                 // Animate the expand indicator
                 if (expandIndicator) {
-                    expandIndicator.textContent = '⊕';
+                    expandIndicator.textContent = '∐';
                     expandIndicator.style.transform = 'translateY(-50%) rotate(0deg)';
                 }
             }
