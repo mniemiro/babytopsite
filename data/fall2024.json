@@ -43,7 +43,7 @@
       "title": "The isotropy separation sequence",
       "speaker": "Jonathan Buchanan",
       "affiliation": "MIT",
-      "abstract": "We define the geometric fixed points of a G-spectrum from the spectral Mackey functor point of view. We discuss the basic properties of this construction, including the isotropy separation sequence. If time permits, we will discuss the tom Dieck splitting, which allows us to decompose the ordinary fixed points of suspension spectra in terms of geometric fixed points, and also possibly a characterization of G-spectra for G = Cp."
+      "abstract": "We define the geometric fixed points of a G-spectrum from the spectral Mackey functor point of view. We discuss the basic properties of this construction, including the isotropy separation sequence. If time permits, we will discuss the tom Dieck splitting, which allows us to decompose the ordinary fixed points of suspension spectra in terms of geometric fixed points, and also possibly a characterization of G-spectra for G = C_p."
     },
     {
       "date": "Nov 05",
@@ -59,7 +59,7 @@
       "title": "Real bordism I",
       "speaker": "Keita Allen",
       "affiliation": "MIT",
-      "abstract": "We give an introduction to the Real bordism spectrum MU_R, from the sketch of an outline of how it applies to solve the Kervaire invariant one problem. This is a C2-equivariant enrichment of the complex bordism spectrum MU, whose existence allows us to reinterpret classical results in complex bordism as consequences of equivariant generalizations."
+      "abstract": "We give an introduction to the Real bordism spectrum MU_R, from the sketch of an outline of how it applies to solve the Kervaire invariant one problem. This is a C_2-equivariant enrichment of the complex bordism spectrum MU, whose existence allows us to reinterpret classical results in complex bordism as consequences of equivariant generalizations."
     },
     {
       "date": "Nov 19",
@@ -75,7 +75,7 @@
       "title": "Real bordism II",
       "speaker": "Howard Beck",
       "affiliation": "MIT",
-      "abstract": "TBA"
+      "abstract": ""
     },
     {
       "date": "Dec 10",

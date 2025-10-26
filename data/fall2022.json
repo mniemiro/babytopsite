@@ -67,7 +67,7 @@
       "title": "Miller's Adams spectral sequence",
       "speaker": "Natalie Stewart",
       "affiliation": "Harvard",
-      "abstract": "We've previously seen the Adams spectral for computing homotopy classes of maps from the homology theory presented by a ring spectrum of Adams type. As noted by Miller, this spectral sequence depends only on the class of maps which induce epimorphisms in homology; this week, we will study this perspective in the setting of epimorphism classes with enough injectives in an idempotent-complete stable ∞-category. We will see such an epimorphism class is induced by an essentially unique adapted homology theory, and hence its Adams spectral sequence has E2 page canonically identified with an ext group in an appropriate abelian category."
+      "abstract": "We've previously seen the Adams spectral for computing homotopy classes of maps from the homology theory presented by a ring spectrum of Adams type. As noted by Miller, this spectral sequence depends only on the class of maps which induce epimorphisms in homology; this week, we will study this perspective in the setting of epimorphism classes with enough injectives in an idempotent-complete stable ∞-category. We will see such an epimorphism class is induced by an essentially unique adapted homology theory, and hence its Adams spectral sequence has E_2 page canonically identified with an ext group in an appropriate abelian category."
     },
     {
       "date": "Nov 09",

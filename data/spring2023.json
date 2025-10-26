@@ -27,7 +27,7 @@
       "title": "Ambidexterity",
       "speaker": "Rushil Mallarapu",
       "affiliation": "",
-      "abstract": "We will introduce and give motivating examples of the categorical phenomena of ambidexterity. The main goal is to outline the proof that pi-finite Kan complexes are ambidextrous in K(n)-local spectra, and reduce this to questions about the behavior of K(n)-local En-modules. Along the way, we’ll introduce some interesting ideas about alternating powers of formal groups to contextualize these computations."
+      "abstract": "We will introduce and give motivating examples of the categorical phenomena of ambidexterity. The main goal is to outline the proof that pi-finite Kan complexes are ambidextrous in K(n)-local spectra, and reduce this to questions about the behavior of K(n)-local E_n-modules. Along the way, we'll introduce some interesting ideas about alternating powers of formal groups to contextualize these computations."
     },
     {
       "date": "Feb 28",
@@ -75,7 +75,7 @@
       "title": "The height 1 telescope conjecture via the localized Adams spectral sequence",
       "speaker": "Ishan Levy",
       "affiliation": "Harvard",
-      "abstract": "I will explain Haynes Miller's proof of the height 1 telescope conjecture for p>2. We'll see how differentials in the May spectral sequence computing the Adams Novikov E2 term can give enough information about differentials in the Adams spectral sequence to compute the localized Adams spectral sequence for the telescope of the mod p Moore spectrum. If time permits, I'll explain a modification of the argument due to Burklund–Hahn–Senger to deal with the case p=2."
+      "abstract": "I will explain Haynes Miller's proof of the height 1 telescope conjecture for p>2. We'll see how differentials in the May spectral sequence computing the Adams Novikov E_2 term can give enough information about differentials in the Adams spectral sequence to compute the localized Adams spectral sequence for the telescope of the mod p Moore spectrum. If time permits, I'll explain a modification of the argument due to Burklund–Hahn–Senger to deal with the case p=2."
     },
     {
       "date": "Apr 25",
@@ -91,7 +91,7 @@
       "title": "bo resolutions",
       "speaker": "Ishan Levy",
       "affiliation": "Harvard",
-      "abstract": "I will explain work due to Mahowald on the ko-based Adams spectral sequence. In particular, I will prove a splitting of the tensor square of ko, and explain how this lets you say things about the E2 term. A consequence of this is the original proof of the height 1 telescope conjecture at the prime 2."
+      "abstract": "I will explain work due to Mahowald on the ko-based Adams spectral sequence. In particular, I will prove a splitting of the tensor square of ko, and explain how this lets you say things about the E_2 term. A consequence of this is the original proof of the height 1 telescope conjecture at the prime 2."
     },
     {
       "date": "May 09",
