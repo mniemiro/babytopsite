@@ -113,13 +113,13 @@
 }
 
 .mode-professional .talk-speaker {
-    color: #000000;
+    color: #666666;
     font-family: var(--font-family-header);
     font-weight: 500;
 }
 
 .mode-professional .talk-affiliation {
-    color: #000000;
+    color: #666666;
 }
 
 .mode-professional .talk-expand-indicator {
