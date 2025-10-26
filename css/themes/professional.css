@@ -107,19 +107,19 @@
 }
 
 .mode-professional .talk-title {
-    color: var(--text-color);
+    color: #000000;
     font-family: var(--font-family-header);
     font-weight: 600;
 }
 
 .mode-professional .talk-speaker {
-    color: var(--text-color);
+    color: #000000;
     font-family: var(--font-family-header);
     font-weight: 500;
 }
 
 .mode-professional .talk-affiliation {
-    color: var(--text-color-muted);
+    color: #000000;
 }
 
 .mode-professional .talk-expand-indicator {
