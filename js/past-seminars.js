@@ -104,16 +104,41 @@ class PastSeminarsRenderer {
 
     createSemesterElement(semester) {
         const semesterDiv = document.createElement('div');
-        semesterDiv.className = 'past-semester';
+        semesterDiv.className = 'talk';
+        semesterDiv.style.cursor = 'pointer';
+        semesterDiv.addEventListener('click', () => {
+            window.location.href = `semesters/${semester.name}.html`;
+        });
 
+        const headerDiv = document.createElement('div');
+        headerDiv.className = 'talk-header';
+
+        // Create title element (semester name)
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'talk-title';
+        titleDiv.textContent = semester.semester;
+
+        // Create organizer element (replaces speaker)
+        const organizerDiv = document.createElement('div');
+        organizerDiv.className = 'talk-speaker';
         const organizersText = this.formatOrganizers(semester.organizers);
+        organizerDiv.innerHTML = `Organized by ${organizersText}`;
 
-        semesterDiv.innerHTML = `
-            <h3>${semester.semester}</h3>
-            <p><strong>Topic:</strong> ${semester.topic}</p>
-            <p><strong>Organizers:</strong> ${organizersText}</p>
-            <a href="semesters/${semester.name}.html">View ${semester.semester} talks →</a>
-        `;
+        headerDiv.appendChild(titleDiv);
+        headerDiv.appendChild(organizerDiv);
+
+        // Create abstract element (always expanded, no collapse)
+        const abstractDiv = document.createElement('div');
+        abstractDiv.className = 'talk-abstract expanded';
+
+        const abstractContent = document.createElement('div');
+        abstractContent.className = 'talk-abstract-content';
+        abstractContent.textContent = semester.topic;
+
+        abstractDiv.appendChild(abstractContent);
+
+        semesterDiv.appendChild(headerDiv);
+        semesterDiv.appendChild(abstractDiv);
 
         return semesterDiv;
     }
