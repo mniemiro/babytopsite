@@ -50,7 +50,7 @@
       "year": "2024",
       "title": "Indexed operations, HHR norms, and a splash of equivariant higher algebra",
       "speaker": "Natalie Stewart",
-      "affiliation": "",
+      "affiliation": "Harvard",
       "abstract": "We introduce indexed (co)products, indexed tensor products, G-symmetric monoidal categories, G-commutative algebras, and we will introduce Hill-Hopkins-Ravanel norms and their basic properties."
     },
     {
@@ -67,7 +67,7 @@
       "title": "The slice filtration",
       "speaker": "Matthew Niemiro",
       "affiliation": "Harvard",
-      "abstract": "TBA"
+      "abstract": "We will introduce the slice filtration as an equivariant generalization of the Postnikov filtration. We will think about the large-scale structure of this filtration (how can we construct and describe it \"slice by slice\" in the formalism of stable oo-categories?) and the object-level theory necessary for any useful endeavors (what comparisons can be made to the familiar Postnikov filtration? How do slice properties interact with equivariant algebra? What behaviors occur in homotopy?)"
     },
     {
       "date": "Dec 03",

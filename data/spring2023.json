@@ -9,7 +9,7 @@
       "date": "Feb 07",
       "year": "2023",
       "title": "Overview",
-      "speaker": "Ishan",
+      "speaker": "Ishan Levy",
       "affiliation": "",
       "abstract": "The goal of the seminar is to learn about the T(n)-localizations of the stable homotopy category. In the first part of the seminar, we will first go over some of the basics of chromatic homotopy theory and introduce the T(n)-local and K(n)-local categories. We will then focus on understanding ambidexterity and its consequences, which is one of the fundamental features of these categories. In the second part of the seminar, we will read works surrounding the telescope conjecture. In particular, we will learn about the original proofs of the telescope conjecture, attempted disproofs and related conjectures at higher heights, and implications of these conjectures on the size of the stable homotopy groups of spheres."
     },
@@ -73,8 +73,8 @@
       "date": "Apr 18",
       "year": "2023",
       "title": "The height 1 telescope conjecture via the localized Adams spectral sequence",
-      "speaker": "Ishan",
-      "affiliation": "",
+      "speaker": "Ishan Levy",
+      "affiliation": "Harvard",
       "abstract": "I will explain Haynes Miller's proof of the height 1 telescope conjecture for p>2. We'll see how differentials in the May spectral sequence computing the Adams Novikov E2 term can give enough information about differentials in the Adams spectral sequence to compute the localized Adams spectral sequence for the telescope of the mod p Moore spectrum. If time permits, I'll explain a modification of the argument due to Burklund–Hahn–Senger to deal with the case p=2."
     },
     {
@@ -82,23 +82,23 @@
       "year": "2023",
       "title": "The height 1 telescope conjecture via cyclotomic descent",
       "speaker": "Tomer Schlank",
-      "affiliation": "",
+      "affiliation": "HUJI",
       "abstract": "I shall present proof for the height 1 telescope at odd primes using cyclotomic descent. That is: First we shall prove that the maximal cyclotomic extension is faithful in height 1. We then use the Snaith theorem to identify the maximal cyclotomic extension with KU. If time permits, I all explain the mild modifications needed to extend the proof to p=2. This proof is part of a joint project with S. Carmeli and L. Yanovski."
     },
     {
       "date": "May 02",
       "year": "2023",
       "title": "bo resolutions",
-      "speaker": "Ishan",
-      "affiliation": "",
+      "speaker": "Ishan Levy",
+      "affiliation": "Harvard",
       "abstract": "I will explain work due to Mahowald on the ko-based Adams spectral sequence. In particular, I will prove a splitting of the tensor square of ko, and explain how this lets you say things about the E2 term. A consequence of this is the original proof of the height 1 telescope conjecture at the prime 2."
     },
     {
       "date": "May 09",
       "year": "2023",
       "title": "Higher heights and the triple loop space approach",
-      "speaker": "Ishan",
-      "affiliation": "",
+      "speaker": "Ishan Levy",
+      "affiliation": "Harvard",
       "abstract": "I will compute the E_2 term of the localized Adams Novikov and localized Adams spectral sequences for the ring y(n). I will then explain something about the picture of Mahowald–Ravenel–Schick about how they expect the localized Adams spectral sequence should look like, and their approach to understanding it."
     }
   ]
