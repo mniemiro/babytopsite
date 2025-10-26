@@ -405,4 +405,8 @@ body {
     .mit-logo {
         height: 27px; /* 75% of 36px */
     }
+    
+    .logos {
+        display: none;
+    }
 }
